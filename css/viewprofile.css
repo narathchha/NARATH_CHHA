@@ -1,3 +1,5 @@
+
+/* ViewProfile */
 body{
     margin: 0;
     padding: 0;
@@ -10,9 +12,6 @@ nav{
     display: flex;
     justify-content: space-between;
     background: rgb(10, 10, 102);
-}
-h2,h4{
-    color:#ffff ;
 }
 a{
     text-decoration: none;
@@ -44,69 +43,48 @@ li a:hover{
 ul li {
     list-style: none;
 }
-.container{
-    display: flex;
-    width: 100%;
-    /* flex-wrap: wrap; */
-    /* height: 100vh; */
-}
-.contact{
-    width:30%;
-    background: rgb(230, 219, 219);
-    height: 100vh;
-}
-/* .contents{
-    width: 90%;
+.contact-1{
     display: flex;
     flex-wrap: wrap;
-    background: rgb(252, 186, 232);
-} */
-.profile{
-    background: rgb(209, 187, 187);
-    margin-top:5px;
-    width: 80%;
-    height:40vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    
-    
-}
-.profile img{
-    width:50%;
-    height: 20vh;
-    border-radius:50%;
-    outline: none;
-}
-button{
-    width:51%;
-    border: none;
-    border-radius:40px;
-    background:teal;
-    outline: none;
-}
-.systemnetwork img{
-    width:100%;
-    height: 100vh;
-}
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpurelifi.com%2Flifi-technology%2F&psig=AOvVaw0g-O3qUxuqRBzoQJaq7b5V&ust=1611821023925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC1t7fTu-4CFQAAAAAdAAAAABAE');
 
-.content_nav{
+} 
+ .viewProfil{
+    height: 65vh;
+    margin: auto;
+    background-image:url('https://purelifi.com/wp-content/uploads/2019/02/AdobeStock_118793641-1320x740.jpeg');
+    }
+.pro{
+    width:30%;
     display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;  
 }
+.pro img{
+    margin-top:5px;
+    border-radius:50%;
+}
+.text{
+    width: 50%;
+    margin: auto;
+    margin-left:42%;
+    margin-top:20px;
+    color:#ffff;
+    line-height:1.4;
+} 
 
 footer{
     background: rgb(1, 1, 36);
     color:#ffff;
     text-align: center;
     padding: 10px;
-    margin-top:-5px;
+    /* margin-top:-5px; */
     font-size:40px;
 }
 .logo li{
     display:inline-block;
     color: wheat;
     justify-content:center;
-    
+    padding: 10px;
 }

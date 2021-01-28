@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+nav{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(10, 10, 102);
+}
+h2,h4{
+    color:#ffff ;
+}
+a{
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin:0;
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.header{
+    background: rgb(18, 3, 59);
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+ul li {
+    list-style: none;
+}
+.container{margin: 0;padding: 0;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* height: 100vh; */
+}
+.systemnetwork{
+    justify-content: center;
+    flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
+    flex-basis: 70%; /* sets initial width to 70%*/
+    display: grid;
+    background: rgba(141, 132, 132, 0.541);
+    /* flex-wrap: wrap; */
+}
+
+.contact{
+    width:30%;
+    background: rgb(230, 219, 219);
+    height: 100vh;
+    display: inline-block;
+}
+#box{
+    margin: 10px;
+    width: 290px;
+    height: 290px;
+    background: rgba(19, 17, 17, 0.541);
+}
+.box{
+    display: flex;
+}
+/* .contents{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(252, 186, 232);
+} */
+.profile{
+    background: rgb(209, 187, 187);
+    margin-top:5px;
+    width: 80%;
+    height:40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    
+    
+}
+.profile img{
+    width:160px;
+    height: 160px;
+    border-radius:50%;
+    outline: none;
+}
+button{
+    width:51%;
+    border: none;
+    border-radius:40px;
+    background:teal;
+    outline: none;
+}
+/* .systemnetwork {
+    background: url(../images/forest.jpg) no-repeat;
+    color: #ffff;
+
+} */
+
+.content_nav{
+    display: flex;
+}
+h3{
+    text-align: center;
+    text-decoration:underline;
+}
+
+
+footer{
+    background: rgb(1, 1, 36);
+    color:#ffff;
+    text-align: center;
+    padding: 10px;
+    /* margin-top:-5px; */
+    font-size:40px;
+}
+.logo li{
+    display:inline-block;
+    color: wheat;
+    justify-content:center;
+    padding: 10px;
+}
+/* ViewProfile */
+
+ /* .contact-1{
+    display: flex;
+    flex-wrap: wrap;
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpurelifi.com%2Flifi-technology%2F&psig=AOvVaw0g-O3qUxuqRBzoQJaq7b5V&ust=1611821023925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC1t7fTu-4CFQAAAAAdAAAAABAE');
+
+} 
+ .viewProfil{
+    height: 65vh;
+    margin: auto;
+    background-image:url('https://purelifi.com/wp-content/uploads/2019/02/AdobeStock_118793641-1320x740.jpeg');
+    }
+.pro{
+    width:30%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;  
+}
+.pro img{
+    margin-top:5px;
+    border-radius:50%;
+}
+.text{
+    width: 50%;
+    margin: auto;
+    margin-left:42%;
+    margin-top:20px;
+    color:#ffff;
+    line-height:1.4; }*/
+
+/* about me */
+/* h5{
+    background: rgb(1, 114, 44);
+    width: 10%;
+    padding:10px;
+    border-radius:40px;
+    text-align: center;
+    color:#ffff;
+} */
+/* .content-about{
+    display:flex;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+.sidebar-right{
+    width:5%;
+    background: orange;
+}
+.main{
+    width: 20%;
+    background: rgb(209, 187, 187);
+}
+.side-left{
+    width: 75%;
+    background: rgb(245, 245, 241);
+    text-align: center;
+} */
