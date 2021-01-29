@@ -10,6 +10,11 @@ nav{
     display: flex;
     justify-content: space-between;
     background: rgb(10, 10, 102);
+    opacity: 0.7;
+}
+nav:hover{
+    background: gray;
+    opacity: 0.7;
 }
 h2,h4{
     color:#ffff ;
@@ -41,12 +46,16 @@ li a:hover{
     text-align: center;
     color: aliceblue;
 }
+.header h1{
+    opacity: 0.7;
+}
 ul li {
     list-style: none;
 }
 .container{margin: 0;padding: 0;
     width: 100%;
     display: flex;
+    background: url(../images/telogy.jpg) no-repeat;
     /* flex-wrap: wrap; */
     /* height: 100vh; */
 }
@@ -70,6 +79,8 @@ ul li {
     width: 290px;
     height: 290px;
     background: rgba(19, 17, 17, 0.541);
+    color: white;
+    opacity:0.7;
 }
 .box{
     display: flex;
@@ -124,6 +135,7 @@ h3{
 
 
 footer{
+    display: flex;
     background: rgb(1, 1, 36);
     color:#ffff;
     text-align: center;
@@ -131,21 +143,34 @@ footer{
     /* margin-top:-5px; */
     font-size:40px;
 }
+.ad{
+    width: 50%;
+}
+.ad h6,.logo p{
+    font-size:20px;
+    text-align:justify;
+    opacity:0.7;
+}
+.logo p{
+    margin-left: 200px;
+}
+.logo{
+    width:50%;
+}
+
 .logo li{
     display:inline-block;
     color: wheat;
     justify-content:center;
     padding: 10px;
 }
-/* ViewProfile */
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    
+/* Resopsive */
+@media(max-width:900px){
+    nav{
+        display:inline-block;
+    }
 }
-
+/* ViewProfile */
 .contact-1{
     display: flex;
     flex-wrap: wrap;
@@ -168,35 +193,62 @@ body{
     margin-top:5px;
     border-radius:50%;
 } */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.contaniner5{
+    display: flex;
+    background: url(../images/for.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.content4{
+    background:rgba(41, 39, 39, 0.808);
+    width: 50%;
+    margin-top:20%;
+    opacity: 0.7;
+    color: white;
+}
+.content4 p{
+    margin-left: 20px;
+}
+.aout{
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.card a{
+    color: white;
+}
+.card p{
+    opacity: 0.7;
+}
+.contaniner5 .card {
+    box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.356);
     max-width: 300px;
     margin: auto;
     text-align: center;
-   
+    background:rgba(41, 39, 39, 0.808);
   }
-  
+ 
   .title {
     color: grey;
     font-size: 18px;
   }
   
-  button {
+  .card button {
     border: none;
     outline: 0;
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: rgb(10, 10, 10);
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
+  } 
   
-  a {
+   a {
     text-decoration: none;
-    font-size: 22px;
     color: black;
   }
   
@@ -235,7 +287,7 @@ body{
     width: 90%;
     /* background: rgba(206, 179, 231, 0.521); */
 
-    background: url(../images/forest.jpg) no-repeat;
+    background: url(../images/t.jpg) no-repeat;
     background-size: cover;
     color: #ffff;
 
@@ -265,9 +317,11 @@ th{
 tr:nth-child(even){
     background: rgba(15, 15, 15, 0.747);;
     cursor: pointer;
+    opacity:0.7;
 }
 tr:nth-child(odd){
-    color: black;
+    color:black;
+    opacity:0.7;
 }
 .box2{
     
@@ -295,6 +349,10 @@ tr:nth-child(odd){
     border: none;
     outline: none;
     z-index:-5;
+}
+.content2 a{
+    color: #ffff;
+    font-size:20px;
 }
 h1{
     padding:10px;
@@ -397,6 +455,7 @@ textarea::placeholder{
     width: 20px;
     height: 20px;
 }
+
 .sub,.clear{
     margin-bottom: 6px;
     width:49%;
@@ -404,6 +463,8 @@ textarea::placeholder{
     border-radius:40px;
     border: none;
     outline: none;
+    color: #ffff
+    
 }
 .sub{
     background: teal;
