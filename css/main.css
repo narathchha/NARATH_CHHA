@@ -56,7 +56,7 @@ ul li {
     flex-basis: 70%; /* sets initial width to 70%*/
     display: grid;
     background: rgba(141, 132, 132, 0.541);
-    /* flex-wrap: wrap; */
+    
 }
 
 .contact{
@@ -100,7 +100,8 @@ ul li {
     border-radius:50%;
     outline: none;
 }
-button{
+
+.profile >button{
     width:51%;
     border: none;
     border-radius:40px;
@@ -138,13 +139,20 @@ footer{
 }
 /* ViewProfile */
 
- /* .contact-1{
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.contact-1{
     display: flex;
     flex-wrap: wrap;
     background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpurelifi.com%2Flifi-technology%2F&psig=AOvVaw0g-O3qUxuqRBzoQJaq7b5V&ust=1611821023925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC1t7fTu-4CFQAAAAAdAAAAABAE');
 
 } 
- .viewProfil{
+ /* .viewProfil{
     height: 65vh;
     margin: auto;
     background-image:url('https://purelifi.com/wp-content/uploads/2019/02/AdobeStock_118793641-1320x740.jpeg');
@@ -159,39 +167,277 @@ footer{
 .pro img{
     margin-top:5px;
     border-radius:50%;
-}
+} */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+   
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
 .text{
     width: 50%;
     margin: auto;
     margin-left:42%;
     margin-top:20px;
     color:#ffff;
-    line-height:1.4; }*/
+    line-height:1.4;
+} 
+/* Resum */
 
-/* about me */
-/* h5{
-    background: rgb(1, 114, 44);
-    width: 10%;
-    padding:10px;
-    border-radius:40px;
-    text-align: center;
-    color:#ffff;
-} */
-/* .content-about{
-    display:flex;
-    flex-wrap: wrap;
-    height: 60vh;
+.container1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
 }
-.sidebar-right{
-    width:5%;
+.header2{
+
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+.side-right{
+    width: 5%;
+    background: rgba(161, 192, 161, 0.548);
+}
+.contents1{
+    width: 90%;
+    /* background: rgba(206, 179, 231, 0.521); */
+
+    background: url(../images/forest.jpg) no-repeat;
+    background-size: cover;
+    color: #ffff;
+
+} 
+.side-left{
+    width: 5%;
+    background: rgba(161, 192, 161, 0.548);
+}
+table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top:100px;
+}
+th,tr,td{
+    /* border-bottom: 2px solid purple; */
+    padding: 20px;
+    text-align: center;
+}
+th{
+    background: rgba(15, 15, 15, 0.747);
+    cursor: pointer;
+    color: blanchedalmond;
+   
+    
+}
+tr:nth-child(even){
+    background: rgba(15, 15, 15, 0.747);;
+    cursor: pointer;
+}
+tr:nth-child(odd){
+    color: black;
+}
+.box2{
+    
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:black;
+}
+
+.contents1 h2{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    color: #ffff;
+    background: rgba(15, 15, 15, 0.747);
+    padding: 20px;
+    border-radius:40px;
+}
+.content2 button{
+    background: rgb(53, 1, 23);
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    z-index:-5;
+}
+h1{
+    padding:10px;
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+.header2{
+    
+    margin: auto; 
+    display: grid;
+    grid-gap:5px;
+    text-align: center;
+    color: aliceblue;
+    grid-template-columns:20% 60% 20%; 
+    grid-template-areas: 'content1 content2 content3';
+    
+}
+.content1{
+    padding: 10px;
+    /* height:5vh; */
+    grid-area: 'content1';
+    background: rgba(15, 15, 15, 0.747);
+    margin-top:80px;
+    text-align: justify;
+    line-height:1.5;
+    margin-left:10px;
+}
+
+.content2 button{
+    grid-area: 'content2';
+    margin-top: 10px;
+    position: fixed;
+    z-index: 1000;
+    width: 200px;
+}
+
+.prof img{
+    width:160px;
+    height: 160px;
+    border-radius:50%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+.content3{
+    grid-area: 'content3';
+    background: rgba(15, 15, 15, 0.747);
+    margin-right:20px;
+    margin-top:80px;
+    width:200px;
+    height: 200px;
+
+}
+/* Contact */
+.container2{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top:50px;
+}
+.header3{
+    padding: 20px;
+    background: rgba(161, 153, 153, 0.623);
+    text-align: center;
+    color: blanchedalmond;
+}
+.form{
+    margin-left:20px;
+    margin-right:20px;
+    background: rgba(105, 93, 95, 0.836);
+    width: 50%;
+}
+.form{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.Contact-form{
+    margin-top: 50px;
+}
+.box4,textarea{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width:80%;
+    margin-top: 10px;
+    background:transparent;
+    border: none;
+    border-bottom: 1px solid green;
+}
+textarea::placeholder{
+    color:#ffff;
+    font-size:15px;
+}
+.box4::placeholder{
+    color:#ffff;
+    font-size:15px;
+}
+.check{
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+}
+.sub,.clear{
+    margin-bottom: 6px;
+    width:49%;
+    height:40px;
+    border-radius:40px;
+    border: none;
+    outline: none;
+}
+.sub{
+    background: teal;
+}
+.clear{
     background: orange;
 }
-.main{
-    width: 20%;
-    background: rgb(209, 187, 187);
+/* Entertainment */
+.container3{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    color: #ffff;
+    
 }
-.side-left{
-    width: 75%;
-    background: rgb(245, 245, 241);
-    text-align: center;
-} */
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:24%;
+    background: rgba(116, 112, 112, 0.932);
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container0{
+    padding: 2px 16px;
+  }
+  .card h4{
+      color: #000000;
+      text-align: center;
+  }
+  
